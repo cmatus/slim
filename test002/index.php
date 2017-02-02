@@ -8,10 +8,9 @@ $config['addContentLengthHeader'] = false;
 $config['db']['host']   = "localhost";
 $config['db']['user']   = "root";
 $config['db']['pass']   = "W3nj1t0_";
-$config['db']['dbname'] = "test001";
+$config['db']['dbname'] = "test";
 
 $app = new Slim\App(["settings" => $config]);
-
 $container = $app->getContainer();
 
 $container['logger'] = function($c) {
